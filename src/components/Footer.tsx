@@ -1,13 +1,14 @@
-import { Facebook, Instagram, Twitter, Linkedin, Youtube, Mail, Phone, MapPin, Download } from 'lucide-react';
-import { QRCodeSVG } from 'qrcode.react';
+/* eslint-disable @typescript-eslint/no-require-imports */
+import { Facebook, Instagram, Twitter, Linkedin, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+// import { QRCodeSVG } from 'qrcode.react';
 
 export default function Footer() {
   const socialLinks = [
-    { icon: Facebook, url: 'https://facebook.com', label: 'Facebook' },
-    { icon: Instagram, url: 'https://instagram.com', label: 'Instagram' },
-    { icon: Twitter, url: 'https://twitter.com', label: 'Twitter' },
-    { icon: Linkedin, url: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Youtube, url: 'https://youtube.com', label: 'YouTube' }
+    { icon: Facebook, url: 'http://facebook.com/profile.php?id=61587100803971', label: 'Facebook' },
+    { icon: Instagram, url: 'https://www.instagram.com/tinywingssambhajinagar/', label: 'Instagram' },
+    { icon: Twitter, url: 'https://x.com/TinyWings_Pre', label: 'Twitter' },
+    { icon: Linkedin, url: 'https://www.linkedin.com/in/tiny-wings-0807063a8/', label: 'LinkedIn' },
+    { icon: Youtube, url: 'https://www.youtube.com/channel/UCXnyKr_aodF5V7mgx-mWMCg', label: 'YouTube' }
   ];
 
   const quickLinks = [
@@ -126,13 +127,13 @@ export default function Footer() {
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-pink-500 flex-shrink-0" />
                 <a href="tel:+15551234567" className="text-gray-400 hover:text-pink-500 transition">
-                 +91 738 714 2301
+                862 405 1851
                 </a>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-pink-500 flex-shrink-0" />
-                <a href="mailto:hello@tinywings.com" className="text-gray-400 hover:text-pink-500 transition">
-                  hello@tinywings.com
+                <a href="mailto:tinywings.learning@gmail.com" className="text-gray-400 hover:text-pink-500 transition">
+                 tinywings.learning@gmail.com
                 </a>
               </li>
             </ul>

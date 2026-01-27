@@ -95,7 +95,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Call Us</h4>
                     <p className="text-gray-600 dark:text-gray-300">
-                     +91 738 714 2301<br />
+                     +91 862 405 1851<br />
                       Mon-Fri: 7:00 AM - 6:00 PM
                     </p>
                   </div>
@@ -108,7 +108,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Email Us</h4>
                     <p className="text-gray-600 dark:text-gray-300">
-                      hello@tinywings.com
+                     tinywings.learning@gmail.com
                     </p>
                   </div>
                 </div>
@@ -183,7 +183,7 @@ export default function Contact() {
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-pink-500 focus:border-transparent transition"
-                  placeholder="+91 738 714 2301"
+                  placeholder="+91 862 405 1851"
                 />
               </div>
 
