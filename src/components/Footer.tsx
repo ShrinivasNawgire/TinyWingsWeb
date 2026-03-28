@@ -1,12 +1,11 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
 import { Facebook, Instagram, Twitter, Linkedin, Youtube, Mail, Phone, MapPin } from 'lucide-react';
 // import { QRCodeSVG } from 'qrcode.react';
 
 export default function Footer() {
   const socialLinks = [
-    { icon: Facebook, url: 'http://facebook.com/profile.php?id=61587100803971', label: 'Facebook' },
-    { icon: Instagram, url: 'https://www.instagram.com/tinywingssambhajinagar/', label: 'Instagram' },
-    { icon: Twitter, url: 'https://x.com/TinyWings_Pre', label: 'Twitter' },
+    { icon: Facebook, url: 'https://www.facebook.com/TinyWingsLearning', label: 'Facebook' },
+    { icon: Instagram, url: 'https://www.instagram.com/tinywingslearning/', label: 'Instagram' },
+    { icon: Twitter, url: 'https://x.com/TinyWingsLearn', label: 'Twitter' },
     { icon: Linkedin, url: 'https://www.linkedin.com/in/tiny-wings-0807063a8/', label: 'LinkedIn' },
     { icon: Youtube, url: 'https://www.youtube.com/channel/UCXnyKr_aodF5V7mgx-mWMCg', label: 'YouTube' }
   ];
@@ -33,7 +32,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
             <div className="flex items-center space-x-0 mb-4">
-            <img src={require('../assets/butterfly.png')} className="w-14 h-20 mt-2" alt="TinyWings Logo" />
+            <img src={require('../assets/butterfly.png')} className="w-10 mt-2 mr-2" alt="TinyWings Logo" />
               <span className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
                 TinyWings
               </span>
@@ -120,8 +119,8 @@ export default function Footer() {
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-pink-500 flex-shrink-0 mt-1" />
                 <span className="text-gray-400">
-                  123 Hunny, Mayur Park<br />
-                  Chhatrapati Sambhajinagar - 431001
+                  Plot No. 27, Honey Bunny Building, Near Datta Mandir, Mayur Park,
+                  Jalgaon Road, Chhatrapati Sambhaji Nagar - 431003
                 </span>
               </li>
               <li className="flex items-center space-x-3">
@@ -132,8 +131,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-pink-500 flex-shrink-0" />
-                <a href="mailto:tinywings.learning@gmail.com" className="text-gray-400 hover:text-pink-500 transition">
-                 tinywings.learning@gmail.com
+                <a href="mailto:info@tinywingslearning.com?subject=Know more about TinyWings Preschool and Activity Center&body=Hi! I would like to know more about TinyWings Preschool & Activity Canter." className="text-gray-400 hover:text-pink-500 transition">
+                 info@tinywingslearning.com
                 </a>
               </li>
             </ul>
@@ -143,19 +142,16 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} TinyWings Preschool. All rights reserved.
+              © {new Date().getFullYear()} TinyWings Preschool & Activity Canter. All rights reserved.
             </p>
-            <div className="flex space-x-6 text-sm">
+            {/* <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-pink-500 transition">
                 Privacy Policy
               </a>
               <a href="#" className="text-gray-400 hover:text-pink-500 transition">
                 Terms of Service
               </a>
-              <a href="#" className="text-gray-400 hover:text-pink-500 transition">
-                Cookie Policy
-              </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

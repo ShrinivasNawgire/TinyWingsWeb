@@ -1,6 +1,23 @@
+
 import { ArrowRight, Heart } from 'lucide-react';
+import img1 from '../assets/1.jpeg';
+import img2 from '../assets/2.jpeg';
+import img3 from '../assets/3.jpeg';
+import img4 from '../assets/4.jpeg';
+import img5 from '../assets/5.jpeg';
+import img6 from '../assets/6.jpeg';
+import React, { useEffect, useState } from 'react';
 
 export default function Hero() {
+  const images = [img1, img2, img3, img4, img5, img6];
+  const [current, setCurrent] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 3500);
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
@@ -15,7 +32,8 @@ export default function Hero() {
           <div className="space-y-6">
             <div className="inline-flex items-center space-x-2 bg-pink-100 dark:bg-pink-900/30 px-4 py-2 rounded-full">
               <Heart className="w-4 h-4 text-pink-500" />
-              <span className="text-sm font-medium text-pink-700 dark:text-pink-300">Where Little Dreams Take Flight</span>
+              {/* <span className="text-sm font-medium text-pink-700 dark:text-pink-300">Where Little Dreams Take Flight</span> */}
+              <span className="text-sm font-medium text-pink-700 dark:text-pink-300">Little Wings, Big Dreams</span>
             </div>
 
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
@@ -48,26 +66,46 @@ export default function Hero() {
           </div>
 
           <div className="relative">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-              <img
-                src="https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Happy children learning"
-                className="w-full h-auto"
-              />
-            </div>
-            <div className="absolute -bottom-6 -left-6 bg-yellow-400 dark:bg-yellow-500 rounded-2xl p-6 shadow-xl">
-              <div className="text-center">
-                <div className="text-4xl font-bold text-gray-900">5+</div>
-                <div className="text-sm font-medium text-gray-700">Years Experience</div>
+                <figure className="relative flex justify-center items-center py-2 h-36 w-full select-none">
+                  {/* Left Arrow */}
+                  <button
+                    type="button"
+                    aria-label="Previous image"
+                    onClick={() => setCurrent((prev) => (prev - 1 + images.length) % images.length)}
+                    className="absolute left-2 z-20 bg-white/80 dark:bg-gray-800/80 rounded-full p-2 shadow hover:bg-pink-100 dark:hover:bg-pink-900/40 transition"
+                    style={{ top: '50%', transform: 'translateY(-50%)' }}
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-pink-500">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>
+                  </button>
+                  {/* Images */}
+                  {images.map((img, idx) => (
+                    <img
+                      key={idx}
+                      src={img}
+                      alt={`Carousel image ${idx + 1}`}
+                      className={`w-full h-auto rounded-xl object-cover border-2 border-pink-200 absolute transition-opacity duration-700 ${current === idx ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+                      style={{ left: '50%', transform: 'translateX(-50%)' }}
+                    />
+                  ))}
+                  {/* Right Arrow */}
+                  <button
+                    type="button"
+                    aria-label="Next image"
+                    onClick={() => setCurrent((prev) => (prev + 1) % images.length)}
+                    className="absolute right-2 z-20 bg-white/80 dark:bg-gray-800/80 rounded-full p-2 shadow hover:bg-pink-100 dark:hover:bg-pink-900/40 transition"
+                    style={{ top: '50%', transform: 'translateY(-50%)' }}
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-pink-500">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                  </button>
+                </figure>
+              <div className="text-center mt-2">
+                <div className="text-sm font-medium text-pink-500">Our Happy Kids</div>
               </div>
             </div>
-            <div className="absolute -top-6 -right-6 bg-pink-500 rounded-2xl p-6 shadow-xl">
-              <div className="text-center">
-                <div className="text-4xl font-bold text-white">80+</div>
-                <div className="text-sm font-medium text-pink-100">Happy Kids</div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

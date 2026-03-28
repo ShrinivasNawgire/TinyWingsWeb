@@ -82,8 +82,8 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Visit Us</h4>
                     <p className="text-gray-600 dark:text-gray-300">
-                      123 Hunny, Mayur Park<br />
-                      Chhatrapati Sambhajinagar - 431001
+                      Plot No. 27, Honey Bunny Building, Near Datta Mandir, Mayur Park,
+                      Jalgaon Road, Chhatrapati Sambhaji Nagar - 431003
                     </p>
                   </div>
                 </div>
@@ -108,7 +108,9 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Email Us</h4>
                     <p className="text-gray-600 dark:text-gray-300">
-                     tinywings.learning@gmail.com
+                      <a href="mailto:info@tinywingslearning.com?subject=Know more about TinyWings Preschool and Activity Center&body=Hi! I would like to know more about TinyWings Preschool & Activity Canter." className="text-gray-400 hover:text-pink-500 transition">
+                        info@tinywingslearning.com
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -153,7 +155,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-pink-500 focus:border-transparent transition"
-                  placeholder="Salman Khan"
+                  placeholder="Firstname Lastname"
                 />
               </div>
 
@@ -168,7 +170,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-pink-500 focus:border-transparent transition"
-                  placeholder="salman@example.com"
+                  placeholder="user@example.com"
                 />
               </div>
 
@@ -183,7 +185,7 @@ export default function Contact() {
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-pink-500 focus:border-transparent transition"
-                  placeholder="+91 862 405 1851"
+                  placeholder="8624051851"
                 />
               </div>
 

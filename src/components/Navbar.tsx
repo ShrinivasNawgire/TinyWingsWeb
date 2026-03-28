@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
 import { useState } from 'react';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
@@ -20,7 +19,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-0">
-            <img src={require('../assets/butterfly.png')} className="w-14 h-20 mt-2" alt="TinyWings Logo" />
+            <img src={require('../assets/butterfly.png')} className="w-10 mt-2 mr-2" alt="TinyWings Logo" />
             <span className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
               TinyWings
             </span>

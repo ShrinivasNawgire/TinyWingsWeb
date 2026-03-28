@@ -3,47 +3,47 @@ import { Quote, Star } from 'lucide-react';
 export default function Testimonials() {
   const testimonials = [
     {
-      name: 'Kiara Adwani',
-      role: 'Parent of Saraayah, 2',
-      image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200',
-      content: 'TinyWings has been a blessing for our family. Emma looks forward to school every day and has blossomed socially and academically. The teachers are incredible!',
+      name: 'Pooja Jagtap',
+      role: 'Parent of Reeva, 2',
+      // image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200',
+      content: 'TinyWings has been a blessing for our family. Reeva looks forward to school every day and has blossomed socially and academically. The teachers are incredible!',
       rating: 5
     },
     {
-      name: 'Siddharth Malhotra',
-      role: 'Parent of Saraayah, 3',
-      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200',
+      name: 'Aditya Autade',
+      role: 'Parent of Yug, 3',
+      // image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200',
       content: 'The care and attention my son receives at TinyWings is outstanding. The staff truly cares about each child\'s development and well-being. Highly recommend!',
       rating: 5
     },
     {
-      name: 'Katrina Kaif',
-      role: 'Parent of Unknown, 3',
-      image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=200',
+      name: 'Karan Patil',
+      role: 'Parent of Advika, 3',
+      // image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=200',
       content: 'My daughter has grown so much since joining TinyWings. The curriculum is engaging, and the facility is clean and safe. We couldn\'t be happier with our choice!',
       rating: 5
     },
-    {
-      name: 'Deepika Padukone',
-      role: 'Parent of Dua, 4',
-      image: 'https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&w=200',
-      content: 'As working parents, we needed a preschool we could trust. TinyWings exceeded our expectations with their professionalism, warmth, and dedication to early education.',
-      rating: 5
-    },
-    {
-      name: 'Alia Bhatt',
-      role: 'Parent of Raha, 3',
-      image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=200',
-      content: 'The teachers at TinyWings are passionate and nurturing. They make learning fun and have helped my daughter develop confidence and independence.',
-      rating: 5
-    },
-    {
-      name: 'Ranbir Kapoor',
-      role: 'Parent of Raha, 5',
-      image: 'https://images.pexels.com/photos/1080213/pexels-photo-1080213.jpeg?auto=compress&cs=tinysrgb&w=200',
-      content: 'TinyWings prepared my son wonderfully for kindergarten. The focus on both academics and social-emotional development made all the difference. Thank you!',
-      rating: 5
-    }
+    // {
+    //   name: 'Deepika Padukone',
+    //   role: 'Parent of Dua, 4',
+    //   image: 'https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&w=200',
+    //   content: 'As working parents, we needed a preschool we could trust. TinyWings exceeded our expectations with their professionalism, warmth, and dedication to early education.',
+    //   rating: 5
+    // },
+    // {
+    //   name: 'Alia Bhatt',
+    //   role: 'Parent of Raha, 3',
+    //   image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=200',
+    //   content: 'The teachers at TinyWings are passionate and nurturing. They make learning fun and have helped my daughter develop confidence and independence.',
+    //   rating: 5
+    // },
+    // {
+    //   name: 'Ranbir Kapoor',
+    //   role: 'Parent of Raha, 5',
+    //   image: 'https://images.pexels.com/photos/1080213/pexels-photo-1080213.jpeg?auto=compress&cs=tinysrgb&w=200',
+    //   content: 'TinyWings prepared my son wonderfully for kindergarten. The focus on both academics and social-emotional development made all the difference. Thank you!',
+    //   rating: 5
+    // }
   ];
 
   return (
@@ -80,11 +80,11 @@ export default function Testimonials() {
               </p>
 
               <div className="flex items-center">
-                <img
+                {/* <img
                   src={testimonial.image}
                   alt={testimonial.name}
                   className="w-12 h-12 rounded-full object-cover mr-4"
-                />
+                /> */}
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white">
                     {testimonial.name}

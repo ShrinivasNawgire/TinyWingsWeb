@@ -80,6 +80,19 @@ export default function About() {
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
               Through play-based learning, we encourage curiosity, build social skills, and lay the groundwork for academic success. Our dedicated team works closely with families to ensure each child's unique needs are met.
             </p>
+            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+            Nurturing Unique Minds – We respect each child’s individuality and learning pace. 
+            Joyful Learning – We make learning playful, creative, and full of curiosity.
+             </p>
+            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+            Holistic Development – We focus on cognitive, emotional, social, and physical growth.
+            Strong Foundations – We prepare children with essential pre-academic skills in language, numeracy, and thinking.
+            </p>
+            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+            Emotional Wellbeing – We help children develop confidence, self-expression, and empathy.
+            Values & Life Skills – We encourage kindness, responsibility, respect, and positive behaviour.
+            Partnership with Parents – We maintain strong communication so learning continues at home and school.
+            </p>
             <div className="flex flex-wrap gap-4">
               {/* <div className="bg-pink-100 dark:bg-pink-900/30 px-6 py-3 rounded-full">
                 <span className="text-pink-700 dark:text-pink-300 font-semibold">Ages 2-6</span>
