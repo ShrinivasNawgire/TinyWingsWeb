@@ -131,7 +131,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-pink-500 flex-shrink-0" />
-                <a href="mailto:info@tinywingslearning.com?subject=Know more about TinyWings Preschool and Activity Center&body=Hi! I would like to know more about TinyWings Preschool & Activity Canter." className="text-gray-400 hover:text-pink-500 transition">
+                <a href="mailto:info@tinywingslearning.com?subject=Know more about TinyWings Preschool &body=Hi! I would like to know more about TinyWings Preschool." className="text-gray-400 hover:text-pink-500 transition">
                  info@tinywingslearning.com
                 </a>
               </li>
@@ -142,7 +142,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} TinyWings Preschool & Activity Canter. All rights reserved.
+              © {new Date().getFullYear()} TinyWings Preschool. All rights reserved.
             </p>
             {/* <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-pink-500 transition">

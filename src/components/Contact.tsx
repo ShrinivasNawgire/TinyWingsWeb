@@ -108,7 +108,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Email Us</h4>
                     <p className="text-gray-600 dark:text-gray-300">
-                      <a href="mailto:info@tinywingslearning.com?subject=Know more about TinyWings Preschool and Activity Center&body=Hi! I would like to know more about TinyWings Preschool & Activity Canter." className="text-gray-400 hover:text-pink-500 transition">
+                      <a href="mailto:info@tinywingslearning.com?subject=Know more about TinyWings Preschool &body=Hi! I would like to know more about TinyWings Preschool." className="text-gray-400 hover:text-pink-500 transition">
                         info@tinywingslearning.com
                       </a>
                     </p>

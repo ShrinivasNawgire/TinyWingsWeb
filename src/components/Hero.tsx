@@ -5,11 +5,18 @@ import img2 from '../assets/2.jpeg';
 import img3 from '../assets/3.jpeg';
 import img4 from '../assets/4.jpeg';
 import img5 from '../assets/5.jpeg';
-import img6 from '../assets/6.jpeg';
 import React, { useEffect, useState } from 'react';
 
 export default function Hero() {
-  const images = [img1, img2, img3, img4, img5, img6];
+    // Flashing admissions text for Hero section
+    const AdmissionsFlashingText = () => (
+      <div className="flex items-center space-x-2 px-4">
+        <span className="animate-pulse font-bold text-pink-600 dark:text-pink-400 text-base md:text-lg">
+          Admissions Open for 2026-27
+        </span>
+      </div>
+    );
+  const images = [img1, img2, img3, img4, img5];
   const [current, setCurrent] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {
@@ -26,10 +33,12 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="pt-16 min-h-screen flex items-center bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <section id="home" className="pt-16 min-h-screen flex flex-col items-center bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
+            <AdmissionsFlashingText />
+            
             <div className="inline-flex items-center space-x-2 bg-pink-100 dark:bg-pink-900/30 px-4 py-2 rounded-full">
               <Heart className="w-4 h-4 text-pink-500" />
               {/* <span className="text-sm font-medium text-pink-700 dark:text-pink-300">Where Little Dreams Take Flight</span> */}
@@ -65,7 +74,13 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative space-y-6">
+                {/* Flashing Admissions Open text aligned with carousel */}
+                <div className="flex justify-center mb-2">
+                  <span className="animate-pulse font-bold text-pink-600 dark:text-pink-400 text-base md:text-lg">
+                    Admissions Open
+                  </span>
+                </div>
                 <figure className="relative flex justify-center items-center py-2 h-36 w-full select-none">
                   {/* Left Arrow */}
                   <button
@@ -102,9 +117,6 @@ export default function Hero() {
                     </svg>
                   </button>
                 </figure>
-              <div className="text-center mt-2">
-                <div className="text-sm font-medium text-pink-500">Our Happy Kids</div>
-              </div>
             </div>
         </div>
       </div>
